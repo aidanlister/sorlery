@@ -15,4 +15,5 @@ def create_thumbnail(file_, geometry_string, options, name):
         default.backend._create_thumbnail(source_image, geometry_string, options, thumbnail)
 
         # Need to update both the source and the thumbnail with correct sizing
-        # @todo
+        default.kvstore.set(source)
+        default.kvstore.set(thumbnail, source)
