@@ -9,8 +9,8 @@ setup(
     author_email='aidan@aidanlister.com',
     url='https://github.com/aidanlister/sorlery',
     packages=find_packages(),
-    requires=[
-      'sorl-thumbnail',
-      'django-celery',
+    install_requires=[
+      'sorl_thumbnail',
+      'django_celery',
     ],
 )
